@@ -1,10 +1,10 @@
 class Obscene < Formula
   desc "Hotspot finder — complexity (via scc) × git churn × temporal coupling"
   homepage "https://github.com/wbern/obscene"
-  url "https://registry.npmjs.org/@wbern/obscene/-/obscene-2.11.0.tgz"
-  sha256 "9acbe8d3658938a5b300ba176e238e8628fb73c9f73f16b4efb9f259e7eb4c18"
+  url "https://registry.npmjs.org/@wbern/obscene/-/obscene-2.12.0.tgz"
+  sha256 "753688fc14cef44b7a8b848929949968e846714f794363be7367d4421e0474d1"
   license "MIT"
-  version "2.11.0"
+  version "2.12.0"
 
   livecheck do
     url "https://github.com/wbern/obscene/releases/latest"
