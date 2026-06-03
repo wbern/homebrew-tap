@@ -2,7 +2,7 @@ class CcPing < Formula
   desc "Ping Claude Code sessions to trigger quota windows across multiple accounts"
   homepage "https://github.com/wbern/cc-ping"
   license "MIT"
-  version "1.26.0"
+  version "1.26.1"
 
   livecheck do
     url "https://github.com/wbern/cc-ping/releases/latest"
@@ -15,11 +15,11 @@ class CcPing < Formula
     # com.apple.provenance xattr, which Gatekeeper blocks for
     # ad-hoc-signed Mach-O binaries.
     url "https://github.com/wbern/cc-ping/archive/refs/tags/v#{version}.tar.gz"
-    sha256 "c826f459b71aab6fe13c7fc3d82463e2443dd0580e8e1e8dd7049adc493d6500"
+    sha256 "2232339c042e7b57a91902f221f8be437b111077726e0d93cda70515445e3db8"
     depends_on "oven-sh/bun/bun" => :build
   elsif OS.linux?
     url "https://github.com/wbern/cc-ping/releases/download/v#{version}/cc-ping-linux-x64"
-    sha256 "c257cba3680bb812ac1aa5f10cd7d365cb232a9663d2c8f0794581b9a9e9ff0c"
+    sha256 "a11db8fa92f662c82d4786d48ce64e9a448965e09239df2da8f90b1171e41f9b"
   else
     odie "cc-ping: unsupported platform"
   end
