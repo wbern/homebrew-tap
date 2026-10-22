@@ -5,21 +5,21 @@
 class Adrian < Formula
   desc "Validate architecture decisions and derive review requirements from ADRs."
   homepage "https://github.com/wbern/adrian"
-  version "0.6.1"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wbern/adrian/releases/download/v0.6.1/adrian_0.6.1_macos_x86_64.tar.gz"
-      sha256 "ab5e2661bf13e48cafbcc5975134bdf35c2957e8c48a457156fc2c3e9e81479e"
+      url "https://github.com/wbern/adrian/releases/download/v0.7.0/adrian_0.7.0_macos_x86_64.tar.gz"
+      sha256 "9b956c0b20e9a4e47ad0010724e7d417f583bc5bb7a50cf49a0956a3d8b5c62c"
 
       define_method(:install) do
         bin.install "adrian"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wbern/adrian/releases/download/v0.6.1/adrian_0.6.1_macos_arm64.tar.gz"
-      sha256 "efe5ddcde027b07004978d0056bd59e48cc2a32936fdf7deb04ad0b3c2a5b669"
+      url "https://github.com/wbern/adrian/releases/download/v0.7.0/adrian_0.7.0_macos_arm64.tar.gz"
+      sha256 "9e65d416fe51d3a89d46cc09cd383286d8ffb825376f03dfd01a1ae0d951a32a"
 
       define_method(:install) do
         bin.install "adrian"
@@ -29,15 +29,15 @@ class Adrian < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wbern/adrian/releases/download/v0.6.1/adrian_0.6.1_linux_x86_64.tar.gz"
-      sha256 "b464d13ced29c3b64baa1a7dc9862ebd42a6eadc07cd967ca5cb411e0415297a"
+      url "https://github.com/wbern/adrian/releases/download/v0.7.0/adrian_0.7.0_linux_x86_64.tar.gz"
+      sha256 "9e421f42fbc9a5b5223fe2e9a2579007cf82f0b8fa8ac05466d5907c53922f08"
       define_method(:install) do
         bin.install "adrian"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wbern/adrian/releases/download/v0.6.1/adrian_0.6.1_linux_arm64.tar.gz"
-      sha256 "3d690384afc895a01d124bdde700af732e3020ee7af083adb0d18a4d2e6effef"
+      url "https://github.com/wbern/adrian/releases/download/v0.7.0/adrian_0.7.0_linux_arm64.tar.gz"
+      sha256 "baa9e7ab9649b0c064803954d0dcb5792fd96b2d0e840594b616b900f2369558"
       define_method(:install) do
         bin.install "adrian"
       end
