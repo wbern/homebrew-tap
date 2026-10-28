@@ -5,21 +5,21 @@
 class AdrLint < Formula
   desc "Compatibility command for ADRian architecture decision tooling."
   homepage "https://github.com/wbern/adrian"
-  version "0.14.0"
+  version "0.14.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wbern/adrian/releases/download/v0.14.0/adr-lint_0.14.0_macos_x86_64.tar.gz"
-      sha256 "2a5586c1f1854a14598be4aa3513ea0563be65b3660217f371f11734d2453729"
+      url "https://github.com/wbern/adrian/releases/download/v0.14.1/adr-lint_0.14.1_macos_x86_64.tar.gz"
+      sha256 "bec36d73c2b7314dd2cc90abeef88721574949d10ee195fb620ce7655c744d06"
 
       define_method(:install) do
         bin.install "adr-lint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wbern/adrian/releases/download/v0.14.0/adr-lint_0.14.0_macos_arm64.tar.gz"
-      sha256 "15f7ab01bcc585ae3a49032cc8d136f56d0fc14846c04dbdc841939eddf4cc1a"
+      url "https://github.com/wbern/adrian/releases/download/v0.14.1/adr-lint_0.14.1_macos_arm64.tar.gz"
+      sha256 "a1073f9f7707486210429303d237969ab9572236b90d3d7b59a9bd168e6fe735"
 
       define_method(:install) do
         bin.install "adr-lint"
@@ -29,15 +29,15 @@ class AdrLint < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wbern/adrian/releases/download/v0.14.0/adr-lint_0.14.0_linux_x86_64.tar.gz"
-      sha256 "46fe603fff56d0c542965c3b0d070e43f81d71b07f60f74dd40f68a819819a99"
+      url "https://github.com/wbern/adrian/releases/download/v0.14.1/adr-lint_0.14.1_linux_x86_64.tar.gz"
+      sha256 "962e5c5459cc511f61c2c989cc5e41f2d1a79221288e200f524a58e4f089e7f5"
       define_method(:install) do
         bin.install "adr-lint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wbern/adrian/releases/download/v0.14.0/adr-lint_0.14.0_linux_arm64.tar.gz"
-      sha256 "9dd5aceefb73bf9a15bda57151d96b4a023b5e0817ab8995b2161abfcc17d952"
+      url "https://github.com/wbern/adrian/releases/download/v0.14.1/adr-lint_0.14.1_linux_arm64.tar.gz"
+      sha256 "f453cf01909c0fae95ca1d161925b672da9176566e3230f635a7b73f0d3bc2a8"
       define_method(:install) do
         bin.install "adr-lint"
       end
